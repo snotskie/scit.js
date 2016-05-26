@@ -1,0 +1,21 @@
+.scit-quoted {
+    /* static */
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    
+    /* changed by js */
+    border-color: transparent;
+}
+
+.scit-quoting {
+    /* static */
+    overflow: hidden;
+    border-style: solid;
+    border-width: 2px 1px 1px 1px;
+    
+    /* changed by js */
+    border-color: transparent;
+    height: 0;
+    padding: 0em 1em;
+    display: none;
+}
