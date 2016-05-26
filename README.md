@@ -2,7 +2,7 @@
 
 This is a small script and style to make it easy to write and publish "scits" (pronounced "skits").
 
-Scits are Self-Critical Interactive Texts, a web-based genre of writing akin to using long footnotes, except those footnotes can also have footnotes, and so on. It is best explained by viewing `example.html`.
+Scits are Self-Critical Interactive Texts, a web-based genre of writing akin to using long footnotes, except those footnotes can also have footnotes, and so on. It is best explained by viewing `example.html`, viewable [here](https://cdn.rawgit.com/snotskie/scit.js/master/example.html).
 
 This script is designed to play well with Markdown-based blogging engines, without requiring a Markdown installation. The grammar is described below, and can be seen in `example.md`.
 
@@ -57,3 +57,7 @@ The paragraph that contains that tie should be followed by three paragraphs that
 A tie matches the regular expression `/\[\[([^|]+|(.+)\]\]/`, where `$1` is the text being quoted and `$2` is the comma-separated list of voice identifiers.
 
 A critique matches the regular expression `/^\[\[([^:]+):(.+)\]\]$/`, where `$1` is the identifier of the voice making the critique and `$2` is the text of the critique. **Note that this means that the first and last characters of the paragraph's `innerHTML` must be [[ and ]] respectively.**
+
+## Notes
+
+The user must be able to scroll all the way past the end of the scit. Usually, this means adding extra padding/margin to the bottom of the page footer so that the main article content can be scrolled entirely out of view. Also, care must be taken that the user actually scrolls to begin with, and that they scroll far enough to trigger the first critique to appear.
