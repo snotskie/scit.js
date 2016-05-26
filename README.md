@@ -6,6 +6,17 @@ Scits are Self-Critical Interactive Texts, a web-based genre of writing akin to 
 
 This script is designed to play well with Markdown-based blogging engines, without requiring a Markdown installation. The grammar is described below, and can be seen in `example.md`.
 
+## Usage
+
+Include the following lines in your `<head></head>`.
+
+```
+<link href="scit.css" rel="stylesheet" type="text/css" />
+<script src="scit.js"></script>
+```
+
+Then, write a scit as paragraphs (`<p></p>`s) that contain properly formatted text, described below.
+
 ## Genre Components
 
 A scit has three components:
