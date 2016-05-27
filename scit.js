@@ -7,7 +7,7 @@ $(function(){
         var node = this;
         var html = node.innerHTML;
         // Quoting paragraph
-        html = html.replace(/^\[\[([^:]+):(.+)\]\]$/, function(match, id, text){
+        html = html.replace(/^\[\[([^:]+):([\s\S]+)\]\]$/, function(match, id, text){
             id = id.replace(/[^A-z]/, "").toUpperCase();
             qnums[id] = qnums[id] || {"ref": 0, "def": 0, "col": colors[cnum++]};
             node.setAttribute("class", "scit-quoting");
